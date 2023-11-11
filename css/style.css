@@ -1,5 +1,5 @@
 /*----- GENERAL -----*/
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,50 +8,53 @@
 }
 
 /*----- HEADER -----*/
-header{
+header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondo-la-mesa-cundinamarca.jpg");
-    background-color: #cccccc; 
+    background-color: #cccccc;
     height: 100vh;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.logo{
+.logo {
     margin-top: 5vh;
     width: 25vh;
     color: #cccccc;
 }
 
-.nav_links{
+.nav_links {
     margin-top: 5vh;
 }
 
-.nav_links a{
+.nav_links a {
     text-decoration: none;
     color: white;
     margin-left: 6vh;
 }
 
-.nav_links a:hover{
+.nav_links a:hover {
     color: rgb(255, 174, 0);
 }
 
-.msg{
-    margin: 30vh 50vh 10vh 50vh ;
+.msg {
+    margin: 30vh 50vh 10vh 50vh;
     color: white;
     text-align: center;
 }
-.msg p{
+
+.msg p {
     font-size: 20px;
 }
-.msg h1{
+
+.msg h1 {
     text-align: center;
     padding: 10px;
     margin: 15px;
@@ -61,7 +64,7 @@ header{
 }
 
 /*- text -*/
-header h2{
+header h2 {
     margin-top: 20vh;
     margin-left: 20vh;
     color: white;
@@ -69,55 +72,30 @@ header h2{
 
 
 
-/*----- SECTION: MAS SOBRE NOSOTROS -----*/
 
-/*- section -*/
-#sobre_nosotros{
-    background-color: whitesmoke;
-    padding: 10vh;
-}
-/*- title -*/
-#sobre_nosotros h2{
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-/*- divs -*/
-#sobre_nosotros div{
-    display: table-cell;
-    text-align: center;
-}
-
-/*- div titles -*/
-#sobre_nosotros div h3{
-    margin: 2vh;
-}
-
-#sobre_nosotros p {
-    padding: 0 2vh;
-}
 
 /*----- SECTION: SERVICIOS -----*/
 
 /*- section -*/
-#servicios{
+#servicios {
     background-color: whitesmoke;
     padding: 10vh;
 }
+
 /*- title -*/
-#servicios h2{
+#servicios h2 {
     margin-bottom: 50px;
     text-align: center;
 }
 
 /*- divs -*/
-#servicios div{
+#servicios div {
     display: table-cell;
     text-align: center;
 }
 
 /*- div titles -*/
-#servicios div h3{
+#servicios div h3 {
     margin: 2vh;
 }
 
@@ -127,13 +105,13 @@ header h2{
 
 /*----- SECTION: CASAS Y DEPAS EN VENTA -----*/
 
-#casas_en_venta h2{
+#casas_en_venta h2 {
     margin: 5vh;
     text-align: center;
 }
 
 /*- anuncios boxes -*/
-#anuncios{
+#anuncios {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +119,7 @@ header h2{
 }
 
 /*- each anuncio box -*/
-.anuncio{
+.anuncio {
     width: 45vh;
     height: 70vh;
     background-color: #fdfdfd;
@@ -152,44 +130,45 @@ header h2{
     justify-content: center;
 
 }
-.anuncio img{
+
+.anuncio img {
     width: 44.8vh;
     height: 30vh;
-    
+
 }
 
-.anuncio h3{
-   text-align: center;
-   margin-top: 2vh;
+.anuncio h3 {
+    text-align: center;
+    margin-top: 2vh;
 }
 
-.anuncio p{
+.anuncio p {
     margin: 2vh;
- }
+}
 
-.anuncio .precio{
-    color:#71B11F; 
+.anuncio .precio {
+    color: #71B11F;
     margin-right: auto;
     font-weight: bold;
 
 }
 
- /*- icons -*/
+/*- icons -*/
 
-.iconos img{
+.iconos img {
     width: 5vh;
     height: 5vh;
     margin-top: 2vh;
     margin-left: 4vh;
- }
+}
 
- .iconos span{
+.iconos span {
     justify-items: center;
- }
+}
 
 /*- buttons -*/
 
- .anuncio button{
+.anuncio button {
     align-items: flex-end;
     margin: 1.5vh;
     padding-top: 1.5vh;
@@ -202,9 +181,9 @@ header h2{
     color: white;
     font-weight: bold;
 
- }
+}
 
- #casas_en_venta .btn-todas button{
+#casas_en_venta .btn-todas button {
     margin: 1.5vh;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
@@ -214,35 +193,37 @@ header h2{
     border: 1px solid white;
     color: white;
     font-weight: bold;
- }
+}
 
- .btn-todas{
+.btn-todas {
     display: flex;
     justify-content: center;
     padding: 20px;
- }
+}
 
 /*----- ENCUENTRA LA CASA DE TUS SUEÑOS -----*/
 
-#casa_sueños{
+#casa_sueños {
     background-image: url("../img/encuentra.jpg");
-    background-color: #cccccc; 
-    height: 40vh; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    padding:20px;
+    background-color: #cccccc;
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
 }
 
-#casa_sueños h1, #casa_sueños p, #casa_sueños button{
+#casa_sueños h1,
+#casa_sueños p,
+#casa_sueños button {
     margin-left: 10vh;
     margin-top: 6vh;
     color: white;
- 
+
 }
 
 
-#casa_sueños button{
+#casa_sueños button {
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     padding-left: 5vh;
@@ -256,7 +237,7 @@ header h2{
 
 /*----- ULTIMA SECCION: NUESTRO BLOG + TESTIMONIALES -----*/
 
-#ultima_seccion{
+#ultima_seccion {
     position: relative;
     display: flex;
 }
@@ -266,31 +247,31 @@ header h2{
     margin: 10vh;
 }
 
-#nuestro_blog .entrada_blog{
+#nuestro_blog .entrada_blog {
     position: relative;
     display: flex;
     margin: 5vh;
 }
 
 /*- imagen -*/
-#nuestro_blog .entrada_blog img{
+#nuestro_blog .entrada_blog img {
     width: 30vh;
     margin-right: 2vh;
 }
 
 /*- linea -*/
-#nuestro_blog .entrada_blog .linea{
+#nuestro_blog .entrada_blog .linea {
     border-bottom: 4px solid #71B11F;
     max-width: 10vh;
 }
 
 
 /*--- Testimoniales ---*/
-#testimoniales{
+#testimoniales {
     margin: 5vh;
 }
 
-#testimoniales div{
+#testimoniales div {
     display: flex;
     background-color: #71B11F;
     padding: 5vh;
@@ -300,69 +281,71 @@ header h2{
 
 }
 
-#testimoniales div .fa-quote-left{
+#testimoniales div .fa-quote-left {
     font-size: 20px;
     margin-right: 1vh;
 }
 
-#testimoniales div span{
+#testimoniales div span {
     float: right;
     margin-top: 3px;
-    
+
 }
 
 /*----- FOOTER -----*/
 
-.footer{
-    background:#000;
-    padding:30px 0px;
+.footer {
+    background: #000;
+    padding: 30px 0px;
     font-family: 'Play', sans-serif;
-    text-align:center;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
     }
-    
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:gray;
-    font-size:0.8em;
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
     }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
+
+    .footer .row a i {
+        margin: 0% 3%;
     }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
+}

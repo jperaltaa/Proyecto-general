@@ -16,17 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
     <header>
-
         <div class="navbar">
             <h1 class="logo"> P&A Inmobiliaria</h1>
             <nav class="nav_links">
-                <a href="">Nosotros</a>
                 <a href="">Anuncios</a>
                 <a href="">Blog</a>
                 <a href="">Contacto</a>
@@ -37,36 +38,7 @@
             <h1>Encuentre la propiedad de sus sueños.</h1>
             <p>En P&A Inmobiliaria, ayudamos a nuestros clientes a encontrar el hogar perfecto. Ofrecemos una amplia gama de servicios de venta y administración de inmuebles, para que pueda encontrar la propiedad que necesita, ya sea para vivir, invertir o alquilar. <br><br> ¿Busca una casa? ¿Un apartamento? ¿Una finca?</p>
         </div>
-
     </header>
-
-    <!------- NOSOTROS ------->
-    <section id="sobre_nosotros">
-        <h2>Más Sobre Nosotros</h2>
-        <div>
-            <img src="./img/icono1.svg" alt="icono de un candado">
-            <h3>SEGURIDAD</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa mollitia voluptas pariatur? Non,
-                repudiandae sed vero perspiciatis sequi quod! Excepturi sunt asperiores hic. Eligendi dolorem ex,
-                fuga aut officia inventore?</p>
-        </div>
-        <div>
-            <img src="./img/icono2.svg" alt="icono de billetes dinero">
-            <h3>EL MEJOR PRECIO</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa mollitia voluptas pariatur? Non,
-                repudiandae sed vero perspiciatis sequi quod! Excepturi sunt asperiores hic. Eligendi dolorem ex,
-                fuga aut officia inventore?</p>
-        </div>
-        <div>
-            <img src="./img/icono3.svg" alt="icono de un reloj">
-            <h3>A TIEMPO</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa mollitia voluptas pariatur? Non,
-                repudiandae sed vero perspiciatis sequi quod! Excepturi sunt asperiores hic. Eligendi dolorem ex,
-                fuga aut officia inventore?</p>
-        </div>
-
-    </section>
-
     <!------- SERVICIOS ------->
     <section id="servicios">
         <h2>Nuestros servicios</h2>
@@ -93,9 +65,7 @@
         </div>
 
     </section>
-
     <!------- CASAS Y DEPAS EN VENTA ------->
-
     <section id="casas_en_venta">
         <h2>Casas, apartamentos y mas...</h2>
 
@@ -155,20 +125,92 @@
         </div>
 
     </section>
-
-    <!------- ENCUENTRA LA CASA DE TUS SUEÑOS ------->
-
+    <!------- CONTACTO ------->
     <section>
         <div id="casa_sueños">
-            <h1>Encuentra la casa de tus sueños</h1>
-            <p>Llená el formulario de Contacto y un asesor se pondrá en contacto contigo a la brevedad.</p>
-            <button>CONTÁCTANOS</button>
+            <h1>Encuentra tu hogar ideal.</h1>
+            <p>Llená el formulario de Contacto y un asesor se pondrá en contacto contigo.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                CONTÁCTANOS
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario de contacto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="needs-validation" method="post">
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom01">Nombre</label>
+                                        <input name="nombre" type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Apellido</label>
+                                        <input name="apellido" type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">Ciudad</label>
+                                        <input name="ciudad "type="text" class="form-control" id="validationCustom03" placeholder="" required>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationCustom04">Departamento</label>
+                                        <input name="departamento" type="text" class="form-control" id="validationCustom04" placeholder="" required>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationCustom05">Celular</label>
+                                        <input name="celular" type="text" class="form-control" id="validationCustom05" placeholder="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Estoy de acuerdo con los terminos y condiciones.
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                <button name="enviar" class="btn btn-primary" type="submit">Enviar datos</button>
+                            </form>
+                            <?php
+                                include("contacto.php")
+                            ?>
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function() {
+                                    'use strict';
+                                    window.addEventListener('load', function() {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function(form) {
+                                            form.addEventListener('submit', function(event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
-
     <!------- BLOG  ------->
-
     <section id="ultima_seccion">
         <div id="nuestro_blog">
             <h1>Nuestro Blog</h1>
@@ -207,9 +249,6 @@
         </div>
 
     </section>
-
-
-
     <!------- FOOTER ------->
     <footer>
         <div class="footer">
@@ -226,17 +265,11 @@
                     <li><a href="#">Terminos y condiciones</a></li>
                 </ul>
             </div>
-
             <div class="row">
                 Copyright © 2023 P&A Inmobiliaria - Todos los derechos reservados
             </div>
         </div>
     </footer>
-
-
-
-
 </body>
 
 </html>
-
